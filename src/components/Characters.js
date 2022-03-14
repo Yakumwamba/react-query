@@ -15,7 +15,9 @@ export default function Characters
         return response.json();
 
     }
-    const { data, status } = useQuery(["characters", page], fetchCharacters)
+    const { data, status } = useQuery(["characters", page], fetchCharacters, {
+        keepPreviousData: true,
+    })
 
 
     if (status === "loading") {
@@ -42,7 +44,7 @@ export default function Characters
 
             <div>
                 <button disabled={page === 1}  onClick= { () => setPage(page - 1) } >Previous</button>
-                <button onClick={() => setPage(page + 1)}>Next</button>
+                <button disabled={!data.info.next} onClick={() => setPage(page + 1)}>Next</button>
             </div>
         </div>
     )
