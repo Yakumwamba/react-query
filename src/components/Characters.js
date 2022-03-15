@@ -34,7 +34,7 @@ export default function Characters
 
 
     return (
-        <div className='characters'>
+        <div className='characters '>
 
 
             {data.results.map(character => (

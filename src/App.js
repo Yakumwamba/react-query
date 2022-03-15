@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
    <div className='container'>
-    <h1>Rick and Morty</h1>
+    <h1>Rick and Morty | by <span ><a  href='https://github.com/yakukmwamba'>Yaku </a></span>❤️</h1>
     <QueryClientProvider client={queryClient}>
         <Characters />
       </QueryClientProvider>

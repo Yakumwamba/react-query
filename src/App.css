@@ -1,5 +1,6 @@
 .App {
-  background-color: rgb(36, 40, 46);
+
+  background-color: rgb(36, 40, 45);
 }
 
 .container {
@@ -16,6 +17,7 @@ h1 {
 .characters {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .card {
